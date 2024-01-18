@@ -22,23 +22,29 @@ public class NotaAlunoJOption {
 		int resultado = JOptionPane.showConfirmDialog(null, "Nota calculada! Deseja ver seu resultado?");
 		
 		if (resultado == 0) {
+			
 			if (notaMedia >= 40) {
+				
 				if (notaMedia >= 60) {
+					
 					if (notaMedia >= 80) {
-					JOptionPane.showMessageDialog(null, "Parabéns! Você foi aprovado com uma nota incrível! Nota " + notaMedia);
+						JOptionPane.showMessageDialog(null, "Parabéns! Você foi aprovado com uma nota incrível! Nota " + notaMedia);
 					} else {
-					JOptionPane.showMessageDialog(null, "Você foi aprovado! Nota " + notaMedia);
+						JOptionPane.showMessageDialog(null, "Você foi aprovado! Nota " + notaMedia);
 					}
+					
 				} else {
-				JOptionPane.showMessageDialog(null, "Você está de recuperação! Nota " + notaMedia);
+					JOptionPane.showMessageDialog(null, "Você está de recuperação! Nota " + notaMedia);
 				}
+				
 			} else {
-				if (notaMedia <= 20) {
-					JOptionPane.showMessageDialog(null, "Decepcionante... Você reprovou com uma nota baixíssima! Nota " + notaMedia);
-				} else {
-				JOptionPane.showMessageDialog(null, "Você foi reprovado! Nota " + notaMedia);
-				}
+					if (notaMedia <= 20) {
+						JOptionPane.showMessageDialog(null, "Decepcionante... Você reprovou com uma nota baixíssima! Nota " + notaMedia);
+					} else {
+						JOptionPane.showMessageDialog(null, "Você foi reprovado! Nota " + notaMedia);
+					}
 			}
+			
 	} else {
 		JOptionPane.showMessageDialog(null, "Ok! Até ano que vem!");
 	}
